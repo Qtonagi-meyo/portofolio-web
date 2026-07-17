@@ -1,0 +1,153 @@
+<style>
+    nav {
+        margin-top: 5%;
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: white;
+        height: 10%;
+        flex-wrap: wrap;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .profile,
+    ul,
+    .d-profile {
+        display: flex;
+    }
+
+    .profile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        gap: 2rem;
+        font-weight: 300;
+        margin-right: 3rem;
+    }
+
+    .username {
+        display: block;
+        font-size: 26px;
+    }
+
+    .profile-img {
+        height: 60px;
+        width: 60px;
+        border-radius: 100%;
+        background-image: url("/asset/nordin.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    ul {
+        gap: 1rem;
+    }
+    li {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+   
+    }
+
+    a {
+        font-size: 24px;
+        color: black;
+        text-decoration: none;
+        margin-right: 2rem;
+        
+    }
+    strong {
+        font-weight: 700;
+        font-size: 32px;
+    }
+    .ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        display: none;
+    }
+
+    @media screen and (min-width: 760px) {
+        .sidebar {
+            display: none;
+        }
+        .ul {
+            display: block;
+            display: flex;
+        }
+        nav{
+           justify-content: space-around;
+        }
+        a{
+           margin: 0;
+        }
+        .profile{
+           margin: 0;
+        }
+    }
+    .ul-show {
+       display: block;
+       display: flex;
+       flex-direction: column;
+       background-color: white;
+       text-align: center;
+       text-justify: center;
+       width: 100%;
+       border: 2px solid red;
+       margin-top: 2em;
+    }
+    .li-show{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+    a{
+       text-align: center;
+       margin-left: 1.5em;
+    }
+    /* sidebar */
+    .sidebar {
+        height: 40px;
+        width: 40px;
+        background-image: url("/asset/burgerbutton.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .sidebar-cancel {
+       margin-top: 2rem;
+        background-image: url("/asset/x-cancel.svg");
+        margin-left: .5em;
+    }
+</style>
+
+<nav>
+    <div class="profile">
+        <div class="profile-img"></div>
+        <div class="d-profile">
+            <p class="username">
+                <strong>username</strong> <br />
+                summary
+            </p>
+        </div>
+    </div>
+    <ul id="ul" class="ul">
+        <li class="" id="li"><a href="">about</a></li>
+        <li class="" id="li"><a href="">profile</a></li>
+        <li class="" id="li"><a href="">contact</a></li>
+        <li class="" id="li"><a href="">github</a></li>
+    </ul>
+    <div id="sidebar" class="sidebar"></div>
+</nav>
+
+<script
+>
+    
+</script>
